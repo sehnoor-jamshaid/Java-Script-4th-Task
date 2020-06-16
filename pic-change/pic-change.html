@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+.cont
+{
+    background-color:black;
+    width:30%;
+    position:absolute;
+    transform:translate(100%,5%);
+}
+
+.child
+{
+    position:relative;
+    width:80%;
+height:600px;
+   margin:5%;
+   margin-left:10%;
+   margin-right:10%;
+   background-color: white;
+}
+.bigpic
+{
+   
+    width:80%;
+height:250px;
+   position:relative;
+   top:10%;
+   margin-left:10%;
+   margin-right:10%;
+   background-color: white; 
+
+}
+.small
+{
+    float:left;
+    width:20%;
+height:50px;
+   position:relative;
+   top:15%;
+   margin-left:10%;
+background-color:white; 
+}
+.earring1
+{
+    width:100%;
+    height:100%;
+}
+   .earring
+{
+    width:100%;
+    height:50px;
+}
+.lastdiv
+{ width:80%;
+height:100px;
+   position:relative;
+   top:25%;
+   margin-left:10%;
+background-color:white; 
+
+}
+
+.para,h1
+{margin:0;
+padding:0;
+position: relative;
+}
+.b1,.para
+{
+   margin-top:3%;
+    
+}
+.b1
+{width: 100%;
+height:40px;
+font-size:large;
+color:white;
+background-color: black;
+
+
+}
+.earring:hover{
+    opacity:0.8;
+}
+    </style>
+</head>
+<body>
+   <div class="cont">
+<div class="child">
+<div class="bigpic">
+<img class="earring1" src="images/earring1.png" id="p"  ></img>
+</div>
+<div class="small one">
+    <img class="earring" src="images/earring2.png" onclick="changeImg(this)"></img>
+</div>
+<div class="small two">
+    <img class="earring" src="images/earing3.png" onclick="changeImg(this)"></img>
+</div>
+<div class="small three">
+    <img class="earring" src="images/earring4.png" onclick="changeImg(this)"></img>
+</div>
+
+<div class="lastdiv">
+
+<h1>Ear Rings</h1>
+<p class="para">Fahion  Gold plated long Ear ring</p>   
+<button class="b1">Add to cart</button> 
+</div>
+
+
+</div>
+
+
+
+
+
+   </div>
+    
+   <script>
+
+function changeImg(image){
+var p =document.getElementById("p");
+
+p.src=image.src;
+p.parentElement.style.display="block";
+
+
+}
+   </script> 
+</body>
+</html>
